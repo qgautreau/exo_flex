@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #504f48;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #e78b49;
+}
+
+aside {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #2aa994;
+}
