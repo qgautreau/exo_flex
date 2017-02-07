@@ -1,4 +1,5 @@
 .flex-container {
+    height: 50px;
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -11,15 +12,26 @@
 
 main {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    height: 800px;
     justify-content: center;
     background-color: #e78b49;
+    justify-content: flex-end;
 }
 
 aside {
+    width: 400px;
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
     background-color: #2aa994;
+}
+
+@media screen and (max-width: 390px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    aside {
+        display: block;
+    }
+
 }
